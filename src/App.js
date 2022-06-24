@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Caption, Slide, Slider, MediaBox, Col, Row, Card, CardTitle, Icon } from 'react-materialize';
+import { Caption, Slide, Slider, MediaBox, Col, Row, Card, CardTitle, Icon, SideNav, Button, SideNavItem } from 'react-materialize';
 
 function App() {
   return (
     <div>
+      
       <Slider
         fullscreen={false}
         options={{
@@ -51,16 +52,13 @@ function App() {
   <Row>
     <h5>Hot List</h5>
   <Col
-    m={3}
-    s={12}
+    m='3'
+    
   >
     <Card
-      actions={[
-       
-      ]}
-      closeIcon={<Icon>close</Icon>}
+    className='small'
       header={<CardTitle  image="https://ecs7.tokopedia.net/img/cache/300/attachment/2018/8/15/25749302/25749302_274a89a6-ea41-4a3a-ac6b-ce2881016369.jpg " >Audio</CardTitle>}
-      revealIcon={<Icon>more_vert</Icon>} 
+    
     >
       
      Audio Technica mulai dari <mark style={{backgroundColor:'red'}}>Rp. 910 rb</mark>
@@ -68,16 +66,13 @@ function App() {
   </Col>
 
   <Col
-    m={3}
-    s={12}
+    m='3'
+   
   >
     <Card
-      actions={[
-        
-      ]}
-      closeIcon={<Icon>close</Icon>}
+    className='small'
       header={<CardTitle image="https://ecs7.tokopedia.net/img/cache/300/attachment/2019/1/16/25287362/25287362_a79f0aa6-cf1f-484f-b1a8-83993245cd6f.jpg">Handphone</CardTitle>}
-      revealIcon={<Icon>more_vert</Icon>}
+     
     >
      Handphone Samsung - mulai dari <mark style={{backgroundColor:'red'}}>Rp. 200rb</mark>
     </Card>
@@ -85,15 +80,12 @@ function App() {
 
   <Col
     m={3}
-    s={12}
+   
   >
     <Card
-      actions={[
-        
-      ]}
-      closeIcon={<Icon>close</Icon>}
+     className='small'
       header={<CardTitle image="https://ecs7.tokopedia.net/img/cache/300/attachment/2018/6/26/28201197/28201197_856195f2-b0ba-4711-8200-fd95beaf1df5.jpg">Sequishy</CardTitle>}
-      revealIcon={<Icon>more_vert</Icon>}
+    
     >
       
     Sequishy - mulai dari <mark style={{backgroundColor:'red'}}>Rp. 5,5rb</mark>
@@ -105,18 +97,18 @@ function App() {
     s={12}
   >
     <Card
-      actions={[
-        
-      ]}
-      closeIcon={<Icon>close</Icon>}
+     className='small'
       header={<CardTitle image="https://ecs7.tokopedia.net/img/cache/300/attachment/2018/4/23/28201197/28201197_0383072a-1766-453c-951a-8b53a719cff0.jpg">Koleksi The Avengers </CardTitle>}
-      revealIcon={<Icon>more_vert</Icon>}
+     
     >
       Koleksi The Avengers - mulai dari <mark style={{backgroundColor:'red'}}>Rp. 10rb</mark>
     </Card>
   </Col>
 </Row>
+
+
    
+
     </div>
   );
 }
